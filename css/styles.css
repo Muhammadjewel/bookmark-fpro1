@@ -3,6 +3,7 @@
   --red: #fa5959;
   --black: #242a45;
   --grey: #9194a2;
+  --button-grey: #5b6074;
   --font-stack: "Rubik", "Arial", sans-serif;
 }
 
@@ -78,6 +79,50 @@ img {
   padding-right: 20px;
   margin-left: auto;
   margin-right: auto;
+}
+
+
+/* BUTTON */
+.button {
+  display: inline-block;
+  vertical-align: baseline;
+  padding: 10px 24px;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 28px;
+  font-weight: 500;
+  letter-spacing: 0.25px;
+}
+
+.button--blue {
+  background-color: var(--blue);
+  color: #fff;
+}
+
+.button--blue:hover {
+  border-color: var(--blue);
+  background-color: #fff;
+  color: var(--blue);
+}
+
+.button--blue:active {
+  opacity: 0.6;
+}
+
+.button--grey {
+  background-color: var(--light-grey);
+  color: var(--black);
+}
+
+.button--grey:hover {
+  border-color: var(--button-grey);
+  background-color: #fff;
+}
+
+.button--grey:active {
+  opacity: 0.6;
 }
 
 
