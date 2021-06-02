@@ -2,7 +2,9 @@
   --blue: #5267df;
   --red: #fa5959;
   --black: #242a45;
+  --black-50: rgba(36, 42, 69, 0.5);
   --grey: #9194a2;
+  --light-grey: #f7f7f7;
   --button-grey: #5b6074;
   --font-stack: "Rubik", "Arial", sans-serif;
 }
@@ -51,7 +53,7 @@ body {
   line-height: 28px;
   font-family: var(--font-stack);
   background-color: #fff;
-  color: var(--black);
+  color: var(--black-50);
 }
 
 img {
@@ -207,4 +209,42 @@ img {
 
 .sitenav__login-link:active {
   opacity: 0.6;
+}
+
+
+/* HERO */
+.hero {
+  padding-top: 60px;
+  padding-bottom: 142px;
+  background-image: url("../img/hero-bg.png");
+  background-repeat: no-repeat;
+  background-position: calc(50% + 620px) center;
+}
+
+.hero__content {
+  max-width: 540px;
+}
+
+.hero__heading {
+  margin-top: 0;
+  margin-bottom: 24px;
+  font-size: 48px;
+  line-height: 52px;
+  font-weight: 500;
+  color: var(--black);
+}
+
+.hero__text {
+  margin-top: 0;
+  margin-bottom: 32px;
+  color: var(--black-50);
+}
+
+.hero__actions {
+  display: flex;
+  align-items: center;
+}
+
+.hero__actions-item {
+  margin-right: 16px;
 }
