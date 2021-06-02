@@ -248,3 +248,76 @@ img {
 .hero__actions-item {
   margin-right: 16px;
 }
+
+
+/* FEATURES */
+.features {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.features__header {
+  max-width: 540px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 44px;
+  text-align: center;
+}
+
+.features__heading {
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-size: 32px;
+  line-height: 52px;
+  font-weight: 500;
+  color: var(--black);
+}
+
+.features__text {
+  margin: 0;
+}
+
+/* FEATURES-TABS */
+.features-tabs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.features-tabs__item {
+  border-bottom: 1px solid #ccc;
+}
+
+.features-tabs__link {
+  position: relative;
+  z-index: 1;
+  display: block;
+  padding: 27px 45px;
+  font-size: 16px;
+  line-height: 17px;
+  text-decoration: none;
+  text-transform: capitalize;
+  color: var(--black);
+}
+
+.features-tabs__link:hover {
+  color: var(--red);
+}
+
+.features-tabs__link:active {
+  opacity: 0.6;
+}
+
+.features-tabs__item--active .features-tabs__link::after {
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 4px;
+  background-color: var(--red);
+  content: "";
+}
