@@ -1,4 +1,9 @@
 :root {
+  --blue: #5267df;
+  --red: #fa5959;
+  --black: #242a45;
+  --grey: #9194a2;
+  --font-stack: "Rubik", "Arial", sans-serif;
 }
 
 /* GENERAL */
