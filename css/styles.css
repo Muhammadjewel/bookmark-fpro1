@@ -6,6 +6,27 @@
   --font-stack: "Rubik", "Arial", sans-serif;
 }
 
+
+/* FONTS */
+@font-face {
+  font-family: "Rubik";
+  src: url("../fonts/Rubik-Regular.woff2") format("woff2"),
+    url("../fonts/Rubik-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Rubik";
+  src: url("../fonts/Rubik-Medium.woff2") format("woff2"),
+    url("../fonts/Rubik-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+
 /* GENERAL */
 html {
   box-sizing: border-box;
@@ -25,8 +46,11 @@ body {
   height: 100%;
   padding: 0;
   margin: 0;
-  font-family: "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 28px;
+  font-family: var(--font-stack);
   background-color: #fff;
+  color: var(--black);
 }
 
 img {
